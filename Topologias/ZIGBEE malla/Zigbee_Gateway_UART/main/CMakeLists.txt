@@ -1,0 +1,20 @@
+idf_component_register(
+    SRCS
+        "main.c"
+        "zigbee_receiver.c"
+        "uart_bridge_sender.c"
+        "install_code_compat.c"
+        "app_crypto.c"
+    INCLUDE_DIRS
+        "."
+    REQUIRES
+        nvs_flash
+        esp_event
+        esp_netif
+        esp_driver_gpio
+        esp_driver_uart
+        espressif__esp-zigbee-lib
+        esp_timer
+        mbedtls
+        log
+)

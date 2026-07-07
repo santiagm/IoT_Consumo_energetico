@@ -1,0 +1,21 @@
+idf_component_register(
+    SRCS
+        "main.c"
+        "crypto_helper.c"
+        "thread_receiver.c"
+        "telemetry_json.c"
+        "uart_bridge_sender.c"
+    INCLUDE_DIRS
+        "."
+    REQUIRES
+        nvs_flash
+        esp_netif
+        esp_event
+        esp_timer
+        esp_system
+        mbedtls
+        openthread
+        lwip
+        esp_driver_uart
+        esp_driver_gpio
+)

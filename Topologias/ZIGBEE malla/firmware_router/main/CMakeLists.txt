@@ -1,0 +1,21 @@
+idf_component_register(
+    SRCS
+        "main.c"
+        "zigbee_sender.c"
+        "install_code_compat.c"
+        "app_crypto.c"
+    INCLUDE_DIRS
+        "."
+        "../managed_components/espressif__esp-zigbee-lib/include"
+        "../managed_components/espressif__esp-zigbee-lib/include/compat"
+    REQUIRES
+        espressif__esp-zigbee-lib
+        nvs_flash
+        esp_event
+        esp_netif
+        esp_timer
+        esp_driver_gpio
+        esp_hw_support
+        log
+        mbedtls
+)

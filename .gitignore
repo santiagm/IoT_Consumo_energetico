@@ -1,0 +1,23 @@
+# ESP-IDF
+**/build/
+**/managed_components/
+**/dependencies.lock
+
+# Configuración generada
+**/sdkconfig
+**/sdkconfig.old
+
+# Temporales
+*.log
+*.tmp
+*.bak
+
+# Editores
+.vscode/
+.idea/
+
+# Carpetas duplicadas fuera de Escenarios
+BLE/
+ESPNOW/
+THREAD/
+ZIGBEE/
