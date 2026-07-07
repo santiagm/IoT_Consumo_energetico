@@ -1,0 +1,18 @@
+idf_component_register(
+    SRCS
+        "main.c"
+        "wifi_handler.c"
+        "mqtt_handler.c"
+        "uart_bridge_receiver.c"
+    INCLUDE_DIRS
+        "."
+    REQUIRES
+        nvs_flash
+        esp_event
+        esp_netif
+        esp_wifi
+        mqtt
+        esp_driver_gpio
+        esp_driver_uart
+        log
+)
